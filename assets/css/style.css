@@ -218,7 +218,8 @@ nav.nav {
 }
 /* --------- services ----- */
 .services {
-    margin-top: 170px;
+    padding-top: 170px;
+    padding-bottom: 170px;
 }
 .services__title {
     text-align: center;
@@ -290,4 +291,58 @@ nav.nav {
 .services__btn {
     display: inline-block;
     margin-top: 55px;
+}
+
+/* --------- works ----- */
+.works {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #f6fbff;
+}
+.works__desc {
+    margin-top: 18px;
+    width: 46.8rem;
+}
+
+.works__row {
+    margin-top: 102px;
+    display: flex;
+    gap: 30px;
+}
+.works__item {
+    width: 370px;
+    background: #fff;
+    border-radius: 4px;
+    padding: 42px;
+    border: 16px solid #eaf6ff;
+    transition: 0.25s;
+}
+.works__item:hover {
+    transform: translateY(-16px);
+    border-color: #2e80ce;
+}
+
+.works__item-title {
+    margin-top: 18px;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.5; /* 138.462% */
+}
+
+.works__item-desc,
+.works__item-link {
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
+}
+
+.works__item-desc {
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+    margin-top: 28px;
+}
+.works__item-link {
+    display: inline-block;
+    margin-top: 18px;
 }

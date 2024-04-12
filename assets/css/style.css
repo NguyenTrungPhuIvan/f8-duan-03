@@ -59,6 +59,33 @@ img {
     font-weight: 300;
     line-height: 1.66;
 }
+.button__controls {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+.button__control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #fff;
+    color: #575f66;
+    border: 1px solid #575f66;
+    outline: none;
+    transition: 0.25s;
+}
+.button__control:last-child {
+    transform: rotate(180deg);
+}
+
+.button__control:hover {
+    border-color: #2e80ce;
+    background: #2e80ce;
+    color: #fff;
+}
 
 /* style */
 
@@ -411,8 +438,7 @@ nav.nav {
     display: flex;
     gap: 30px;
 }
-.virtual-dentist__doc {
-}
+
 .virtual-dentist__bg {
     width: 270px;
     height: 318px;
@@ -437,28 +463,70 @@ nav.nav {
 }
 .virtual-dentist__controls {
     margin-top: 38px;
-    display: flex;
-    justify-content: center;
-    gap: 18px;
-}
-.virtual-dentist__control {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: #fff;
-    color: #575f66;
-    border: 1px solid #575f66;
-    outline: none;
-}
-.virtual-dentist__control:last-child {
-    transform: rotate(180deg);
 }
 
-.virtual-dentist__control:hover {
-    border-color: #2e80ce;
+/* --------- download ----- */
+.download {
+    margin-top: 265px;
+}
+.download__row {
     background: #2e80ce;
-    color: #fff;
+    display: flex;
+    border-radius: 4px;
+    position: relative;
+}
+.download__img {
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+}
+
+.download__main-content {
+    margin-left: 514px;
+    padding: 75px 70px 75px 0;
+}
+.download__title {
+    color: var(--text-color);
+    width: 489px;
+}
+.download__desc {
+    color: var(--text-color);
+    margin-top: 18px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 1.66; /* 166.667% */
+}
+
+.download__btns {
+    margin-top: 38px;
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.download__btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #2e80ce;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+.download__btn:hover {
+    cursor: pointer;
+}
+.download__btn-text {
+    text-align: left;
+    color: var(--text-color);
+    display: flex;
+    flex-flow: column;
+}
+.download__btn-text-small {
+    font-size: 6px;
+    font-weight: 500;
+}
+.download__btn-text-big {
+    font-size: 16px;
+    font-weight: 500;
 }

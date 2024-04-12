@@ -38,6 +38,7 @@ a {
     justify-content: center;
     align-items: center;
 
+    outline: none;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.75; /* 175% */
@@ -142,7 +143,11 @@ nav.nav {
     font-weight: 200;
     line-height: 1.75; /* 175% */
 }
-
+.nav__menu-item a:hover,
+.login__text {
+    cursor: pointer;
+    opacity: 0.5;
+}
 .nav__menu-item:first-child a {
     color: #fff;
     font-weight: 400;
@@ -280,6 +285,7 @@ nav.nav {
     display: flex;
     border-radius: 10px;
     padding: 21px 60px 20px 22px;
+    transition: 0.25s;
 }
 .services__item:hover {
     box-shadow: 0px 5px 5px #ebebeb;
@@ -345,6 +351,7 @@ nav.nav {
     transition: 0.25s;
 }
 .works__item:hover {
+    cursor: pointer;
     transform: translateY(-16px);
     border-color: #2e80ce;
 }
@@ -668,7 +675,7 @@ nav.nav {
     margin-top: 28px;
 }
 
-.footer__menu-item:first-child a,
+.footer__menu-item:first-child,
 .footer__column-title {
     color: #fff;
     font-family: "Open Sans";
@@ -687,7 +694,10 @@ nav.nav {
     line-height: 1.85; /* 185.714% */
     white-space: nowrap;
 }
-.footer__menu-item:first-child a {
+.footer__menu-item a:hover {
+    opacity: 0.5;
+}
+.footer__menu-item:first-child {
     margin-top: 0;
 }
 .footer__menu-item:nth-child(2) a {
@@ -720,9 +730,12 @@ nav.nav {
     align-items: center;
     border-radius: 50%;
     background: #fff;
+    color: #2e80ce;
+    transition: 0.25s;
 }
-.social-icon:first-child {
+.social-icon:hover {
     background: #2e80ce;
+    color: #fff;
 }
 
 .footer__separate {
@@ -758,12 +771,15 @@ nav.nav {
     height: 46px;
     width: 100px;
     min-width: 100px;
-
+    border-color: #2e80ce;
     color: #fff;
     font-family: "Open Sans";
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.85; /* 185.714% */
+}
+.footer__form-btn:hover {
+    cursor: pointer;
 }
 
 .footer__form-input::placeholder {
